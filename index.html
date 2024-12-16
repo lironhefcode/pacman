@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/app.css">
+    <title>PAC-MAN</title>
+</head>
+
+<body onload="init()" onkeyup="movePacman(event)">
+    <audio  src="Intro.mp3" type="audio/mpeg" autoplay></audio>
+    <img src="img/pacman.jpg" alt="">
+    <h2 class="score">Score: <span>0</span> </h2>
+    <div class="victorious "><h2>GAME WON</h2><button class="restart" onclick="restart(this)">restart</button></div>
+    <div class="game-over "><h2>GAME OVER</h2><button class="restart" onclick="restart(this)">restart</button></div>
+    <div class="board-container"></div>
+    
+    <script src="js/utils.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/pacman.js"></script>
+    <script src="js/ghost.js"></script>
+</body>
+
+</html>
